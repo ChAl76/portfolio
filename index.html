@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/lang.js" defer></script>
+  </head>
+  <body class="container-bg">
+    <!--header-->
+    <header>
+      <a href="#" class="logo"><img src="./img/logo-6.svg" alt="Logo" /></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navlist">
+        <li><a id="home-nav" href="#home">Home</a></li>
+        <li><a id="about-nav" href="#about">About</a></li>
+        <li><a id="portfolio-nav" href="#portfolio">Portfolio</a></li>
+        <li><a id="contact-nav" href="#contact">Contact</a></li>
+      </ul>
+      <a href="./pdf/CV-en.pdf" class="top-btn" id="download-cv" target="_blank"
+        >Download CV</a
+      >
+      <select id="lang-sel" name="" id="">
+        <option value="en">EN</option>
+        <option value="uk">UA</option>
+      </select>
+    </header>
+
+    <!--home-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h3 id="hello">Hello, I'm</h3>
+        <h1 id="myName">Alexander Chorny</h1>
+        <h5 id="profession">Web <span id="profession-span">Developer</span></h5>
+        <p id="about-me">
+          I strive to create reliable, adaptive, cross-browser web products
+          based on best practices and accessibility.
+        </p>
+        <div class="social">
+          <a
+            href="https://www.linkedin.com/in/alexander-chorny-526b9310b/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://t.me/Alexander_Chorny" target="_blank"
+            ><i class="bx bxl-telegram"></i
+          ></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100033768612283"
+            target="_blank"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+        </div>
+        <a href="#about" class="btn" id="about-btn">About Me</a>
+      </div>
+
+      <div class="home-img">
+        <img src="./img/my-photo.png" alt="Alexanders' photo" />
+      </div>
+    </section>
+
+    <!--about-->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/photo-work.png" alt="" />
+      </div>
+      <div class="about-text">
+        <h3 id="who">Who am I</h3>
+        <h2 id="about-title">About me</h2>
+        <div>
+          <p id="about-p-1">
+            I'm a passionate developer with relevant experience in web
+            development. I focus on creating reliable, adaptive, cross-browser
+            web products, emphasizing best practices and accessibility.
+          </p>
+
+          <p id="about-p-2">
+            In life, I enjoy self-learning, constantly working on improving my
+            technical and communication skills. I strive to learn something new
+            or accomplish something useful every day.
+          </p>
+
+          <p id="about-p-3">
+            Additionally, I enjoy sports and pursuing diverse personal
+            development opportunities.
+          </p>
+        </div>
+      </div>
+      <div>
+        <button class="btn about-btn" id="open-form-modal-btn">Hire Me</button>
+      </div>
+    </section>
+
+    <!--portfolio-->
+    <section class="portfolio" id="portfolio">
+      <div class="heading">
+        <h3 id="portfolio-title">Portfolio</h3>
+        <h2 id="my-projects">My Projects</h2>
+        <p id="portfolio-p">
+          Most common methods for designing websites that work well on desktop
+          is responsive and adaptive design.
+        </p>
+      </div>
+      <div class="portfolio-content">
+        <div class="col">
+          <img src="./img/restaurant.jpg" alt="restaurant image" />
+          <a href="https://speise.netlify.app/" target="_blank">
+            <div class="layer">
+              <h3>Restaurant</h3>
+              <h5>Created with React</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/gpt3-deval.jpg" alt="gpt3 image" />
+          <a href="https://gpt3-deval.netlify.app/" target="_blank">
+            <div class="layer">
+              <h3>GPT-3</h3>
+              <h5>Created with React</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/kraineva.jpg" alt="Kraineva site" />
+          <a href="https://kraineva.com" target="_blank">
+            <div class="layer">
+              <h3>Anastasia Kraineva</h3>
+              <h5>Artist's Website</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/dutrion-site.jpg" alt="" />
+          <a href="https://dutrion-vn.netlify.app/" target="_blank">
+            <div class="layer">
+              <h3>Disinfection Products</h3>
+              <h5>Website</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/cv-portfolio.jpg" alt="" />
+          <a href="https://alexander-chorny.netlify.app/" target="_blank">
+            <div class="layer">
+              <h3>Portfolio & CV</h3>
+              <h5>Web Page</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/magazine.jpg" alt="Magazine" />
+          <a
+            href="https://projects-rwd.netlify.app/magazine.html"
+            target="_blank"
+          >
+            <div class="layer">
+              <h3>Magazine</h3>
+              <h5>CSS Grid</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/dg-clock.jpg" alt="Digital Clock" />
+          <a href="https://dg-clock-al.netlify.app/" target="_blank">
+            <div class="layer">
+              <h3>Digital Clock</h3>
+              <h5>HTML, CSS, JS</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/photo-gallery.jpg" alt="Photo Gallery" />
+          <a
+            href="https://projects-rwd.netlify.app/photo-gallery.html"
+            target="_blank"
+          >
+            <div class="layer">
+              <h3>Photo Gallery</h3>
+              <h5>CSS Flexbox</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/doc-page.jpg" alt="" />
+          <a
+            href="https://projects-rwd.netlify.app/documentation-page.html"
+            target="_blank"
+          >
+            <div class="layer">
+              <h3>Documentation Page</h3>
+              <h5>Html, Css</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="center">
+          <h3 id="contact-title">Let's talk about everything</h3>
+          <p id="contact-p">Don't like forms? Send me an email.</p>
+        </div>
+
+        <div class="action">
+          <form action="#" data-netlify="true" id="form_2">
+            <input
+              id="input-email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <input
+              id="input-submit"
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--ends-->
+    <div class="ends">
+      <p>
+        Made as a portfolio by <span><a href="./">AlexanderChorny</a></span> ©
+        2023
+      </p>
+    </div>
+
+    <!--form-modal-->
+    <div class="modal-bgd" id="form-modal">
+      <!-- modal-bgd modal-active -->
+      <div class="modal-form-container">
+        <button class="close-btn">x</button>
+        <form action="#" class="modal-form" data-netlify="true" id="form">
+          <img class="form-logo" src="./img/logo-6.svg" alt="devAl-logo" />
+
+          <h4 class="modal-form-title">Let's talk about everything</h4>
+          <p class="modal-form-dscr">Send me an email.</p>
+
+          <div class="modal-form-field">
+            <label for="user-name" class="modal-field-name">Name</label>
+            <input
+              required
+              type="text"
+              class="modal-field-input"
+              id="user-name"
+              name="Ім'я"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="user-email" class="modal-field-name">Email</label>
+            <input
+              required
+              type="email"
+              class="modal-field-input"
+              id="user-email"
+              name="Email"
+            />
+          </div>
+
+          <button class="modal-form-btn" id="launch-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-bgd" id="success-modal">
+      <!-- modal-bgd modal-active -->
+      <div class="modal-form modal-form-container">
+        <button class="close-btn">x</button>
+        <img class="form-logo" src="./img/logo-6.svg" alt="devAl-logo" />
+
+        <h4 class="modal-form-title">Your email has been sent</h4>
+        <p class="modal-form-dscr modal-dscr">Thank you for contacting me!</p>
+      </div>
+    </div>
+
+    <!--link to js-->
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>
